@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MediMate</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+</head>
+<body>
+
+  <header>
+    <h1>MediMate</h1>
+    <img src="logo.png" alt="MediMate Logo" />
+    <p>Dein smarter Helfer für die Medikamenteneinnahme</p>
+  </header>
+
+  <main>
+    <h2>Medikament auswählen</h2>
+    <label for="medikamenten-dropdown">Medikament:</label><br />
+    <select id="medikamenten-dropdown"></select>
+
+    <h2>Deine Angaben</h2>
+    <label for="alter">Alter:</label>
+    <input type="number" id="alter" placeholder="Alter in Jahren" />
+    
+    <label for="gewicht">Gewicht (kg):</label>
+    <input type="number" id="gewicht" placeholder="Gewicht in kg" />
+
+    <br /><br />
+    <button id="berechnen-btn">Dosierung berechnen</button>
+
+    <section id="ergebnis" style="display:none;">
+      <h2>Ergebnis</h2>
+      <div id="dosierung-details"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 MediMate</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
