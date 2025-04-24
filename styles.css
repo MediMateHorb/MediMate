@@ -45,7 +45,7 @@ h2 {
 .form-inline {
   flex-direction: row;
   justify-content: center;
-  gap: 20px;
+  gap: 10px;
 }
 
 .form-field {
